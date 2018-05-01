@@ -1,0 +1,2 @@
+class Scrollz < ApplicationRecord
+end

@@ -90,7 +90,7 @@ label {
     /* Set a specific height */
     min-height: 500px;
 
-    /* Create the parallax scrolling effect */
+    /* Create the chapllax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -104,14 +104,14 @@ label {
     /* Set a specific height */
     min-height: 500px;
 
-    /* Create the parallax scrolling effect */
+    /* Create the chapllax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.para1 {
+#chap1 {
   background-image: url("people1.png");
   // background-color: #ffffff94;
   font-size: 36px;
@@ -121,7 +121,7 @@ label {
   height: 973px;
   left: 24%;
 }
-.para2 {
+#chap2 {
   background-image: url("people3.png");
   // background-color: #ffffff94;
   font-size: 36px;
@@ -131,7 +131,7 @@ label {
   height: 1300px;
   text-align: center;
 }
-.para3 {
+#chap3 {
   background-image: url("people4.png");
   // background-color: #ffffff94;
   font-size: 36px;
@@ -140,7 +140,7 @@ label {
   width: 81%;
   height: 805px;
 }
-.para4 {
+#chap4 {
   // background-color: #ffffff94;
   font-size: 36px;
   position: relative;
@@ -149,7 +149,55 @@ label {
   height: 59px;
   left: 30%;
 }
-.para5 {
+#chap5 {
+  // background-color: #ffffff94;
+  font-size: 36px;
+  position: relative;
+  top: -20px;
+  width: 45%;
+  height: 59px;
+}
+
+
+#chap6 {
+  background-image: url("people1.png");
+  // background-color: #ffffff94;
+  font-size: 36px;
+  position: relative;
+  top: -20px;
+  width: 81%;
+  height: 973px;
+  left: 24%;
+}
+#chap7 {
+  background-image: url("people3.png");
+  // background-color: #ffffff94;
+  font-size: 36px;
+  position: relative;
+  top: -20px;
+  width: 100%;
+  height: 1300px;
+  text-align: center;
+}
+#chap8 {
+  background-image: url("people4.png");
+  // background-color: #ffffff94;
+  font-size: 36px;
+  position: relative;
+  top: -20px;
+  width: 81%;
+  height: 805px;
+}
+#chap9 {
+  // background-color: #ffffff94;
+  font-size: 36px;
+  position: relative;
+  top: -20px;
+  width: 45%;
+  height: 59px;
+  left: 30%;
+}
+#chap10 {
   // background-color: #ffffff94;
   font-size: 36px;
   position: relative;
