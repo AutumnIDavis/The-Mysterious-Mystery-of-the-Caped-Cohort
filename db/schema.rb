@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_05_01_182610) do
+ActiveRecord::Schema.define(version: 2018_05_01_201018) do
 
   create_table "choices", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -30,6 +30,8 @@ ActiveRecord::Schema.define(version: 2018_05_01_182610) do
   create_table "scrollzs", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "title"
+    t.text "intstruction"
   end
 
   create_table "stages", force: :cascade do |t|
