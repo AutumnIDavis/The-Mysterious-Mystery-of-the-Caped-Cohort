@@ -1,5 +1,7 @@
 {
   "name": "scrolly",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "maplace-js": "^0.2.10"
+  }
 }
