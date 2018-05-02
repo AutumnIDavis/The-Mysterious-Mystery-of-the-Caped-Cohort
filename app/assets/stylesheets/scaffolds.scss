@@ -21,6 +21,7 @@ pre {
 
 a {
   color: #000;
+  text-decoration: none;
 
   &:visited {
     color: #666;
@@ -28,7 +29,7 @@ a {
 
   &:hover {
     color: #fff;
-    background-color: #000;
+    background-color: #ffffff00;
   }
 }
 
@@ -85,7 +86,7 @@ label {
 
 .stage1 {
     /* The image used */
-    background-image: url("citysquare");
+    background-image: url("cloudy sky");
 
     /* Set a specific height */
     min-height: 500px;
@@ -98,6 +99,21 @@ label {
 }
 
 .stage2 {
+    /* The image used */
+    background-image: url("classroom");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the chapllax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.stage3 {
     /* The image used */
     background-image: url("space");
 
@@ -169,6 +185,37 @@ label {
   position: relative;
   left: 1100px;
   width: 25%;
+  top: -21%;
+}
+
+.speech10{
+  background-color: #ffffffb8;
+  padding: 30px;
+  display: inline-flex;
+  color: black;
+  position: relative;
+  left: 1100px;
+  width: 25%;
+}
+
+.speech11{
+  background-color: #ffffffb8;
+  padding: 30px;
+  display: inline-flex;
+  color: black;
+  position: relative;
+  left: -245px;
+  width: 25%;
+}
+
+.speech12{
+   background-color: #ffffffb8;
+   padding: 30px;
+   display: inline-flex;
+   color: black;
+   position: relative;
+   left: 400px;
+   width: 25%;
 }
 
 #right{
@@ -180,7 +227,7 @@ label {
 }
 
 #chap1 {
-  background-image: url("people1.png");
+  background-image: url("FinalProj1");
   // background-color: #ffffff94;
   font-size: 36px;
   position: relative;
@@ -190,26 +237,28 @@ label {
   left: 24%;
 }
 #chap2 {
-  background-image: url("people3.png");
-  // background-color: #ffffff94;
+  background-image: url("FinalProj2");
   font-size: 36px;
   position: relative;
   top: -20px;
-  width: 100%;
+  width: 112%;
   height: 1300px;
   text-align: center;
+  left: -10%;
+
 }
 #chap3 {
-  background-image: url("people4.png");
-  // background-color: #ffffff94;
+  background-image: url("FinalProj3");
   font-size: 36px;
   position: relative;
   top: -20px;
-  width: 81%;
-  height: 805px;
+  width: 103%;
+  height: 1000px;
+  left: -3%;
 }
 #chap4 {
   // background-color: #ffffff94;
+  background-image: url("FinalProj5");
   font-size: 36px;
   position: relative;
   top: -20px;
@@ -219,6 +268,7 @@ label {
 }
 #chap5 {
   // background-color: #ffffff94;
+  background-image: url("FinalProj6");
   font-size: 36px;
   position: relative;
   top: -20px;
@@ -228,48 +278,71 @@ label {
 
 
 #chap6 {
-  background-image: url("people1.png");
-  // background-color: #ffffff94;
+  background-image: url("FinalProj7");
   font-size: 36px;
   position: relative;
   top: -20px;
-  width: 81%;
+  width: 113%;
   height: 973px;
-  left: 24%;
+  left: -8%;
 }
+
 #chap7 {
-  background-image: url("people3.png");
-  // background-color: #ffffff94;
+  background-image: url("FinalProj8");
   font-size: 36px;
   position: relative;
   top: -20px;
-  width: 100%;
-  height: 1300px;
+  width: 109%;
+  height: 997px;
   text-align: center;
+  left: -14%;
 }
+
 #chap8 {
-  background-image: url("people4.png");
-  // background-color: #ffffff94;
+  background-image: url("FinalProj9");
   font-size: 36px;
   position: relative;
-  top: -20px;
-  width: 81%;
-  height: 805px;
+  top: 103px;
+  width: 118%;
+  height: 883px;
+  left: -22%;
 }
+
 #chap9 {
-  // background-color: #ffffff94;
+  background-image: url("FinalProj10");
   font-size: 36px;
   position: relative;
-  top: -20px;
-  width: 45%;
-  height: 59px;
-  left: 30%;
+  top: 112px;
+  width: 176%;
+  height: 959px;
+  left: -24%;
 }
+
 #chap10 {
-  // background-color: #ffffff94;
+  background-image: url("FinalProj11");
   font-size: 36px;
   position: relative;
   top: -20px;
-  width: 45%;
-  height: 59px;
+  width: 116%;
+  height: 987px;
+  left: -25%;
+}
+
+#chap11 {
+  background-image: url(FinalProj12);
+  font-size: 36px;
+  position: relative;
+  top: -20px;
+  width: 85%;
+  height: 937px;
+}
+
+#chap12 {
+  background-image: url("FinalProj13");
+  font-size: 36px;
+  position: relative;
+  top: -20px;
+  width: 84%;
+  height: 954px;
+  left: 16%;
 }
