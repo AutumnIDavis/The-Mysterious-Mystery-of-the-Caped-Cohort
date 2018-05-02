@@ -48,7 +48,7 @@ class ScrollzsController < ApplicationController
   private
 
   def scrollz_params
-    params.require(:scrollz).permit(:title, :instruction, :image)
+    params.require(:scrollz).permit(:title, :instruction)
   end
 ##ensure the user signed in
   def is_the_user_the_owner(scrollz, user)
