@@ -1,74 +1,43 @@
 class ChoicesController < ApplicationController
   before_action :set_choice, only: [:show, :edit, :update, :destroy]
 
-  # GET /choices
-  # GET /choices.json
-  def index
-    @choices = Choice.all
-  end
+before_action :authenticate_user!
 
-  # GET /choices/1
-  # GET /choices/1.json
-  def show
-  end
+def new
+@scrollz = Scrollz.find(params[scrollz_id])
+is_user_in_control(@scrollz,current_user)
+@stages = Stages.find(params[:stages_id])
+@choice = Choice.new
+end
 
-  # GET /choices/new
-  def new
-    @choice = Choice.new
-  end
+def create
+@scrollz = Scrollz.find(params[scrollz_id])
+@stages = Stages.find(params[:stages_id])
+@choice = Choice.new(choice_params)
+@choice.stage_id = stage_id
+@choice.save
+redirect_to
+end
 
-  # GET /choices/1/edit
-  def edit
-  end
+def edit
+@scrollz = Scrollz.find(params[scrollz_id])
+@stages = Stages.find(params[:stages_id])
+@choice = Choice.find(params[:id])
+end
 
-  # POST /choices
-  # POST /choices.json
-  def create
-    @choice = Choice.new(choice_params)
+def update
+end 
 
-    respond_to do |format|
-      if @choice.save
-        format.html { redirect_to @choice, notice: 'Choice was successfully created.' }
-        format.json { render :show, status: :created, location: @choice }
-      else
-        format.html { render :new }
-        format.json { render json: @choice.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+private
 
-  # PATCH/PUT /choices/1
-  # PATCH/PUT /choices/1.json
-  def update
-    respond_to do |format|
-      if @choice.update(choice_params)
-        format.html { redirect_to @choice, notice: 'Choice was successfully updated.' }
-        format.json { render :show, status: :ok, location: @choice }
-      else
-        format.html { render :edit }
-        format.json { render json: @choice.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+def choice_params
+params.require(:choice)permit(:option)
+end
 
-  # DELETE /choices/1
-  # DELETE /choices/1.json
-  def destroy
-    @choice.destroy
-    respond_to do |format|
-      format.html { redirect_to choices_url, notice: 'Choice was successfully destroyed.' }
-      format.json { head :no_content }
-    end
-  end
-
-  private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_choice
-      @choice = Choice.find(params[:id])
-    end
-
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def choice_params
-      params.fetch(:choice, {})
-    end
+def is_user_in_control
+if scrollz.user_id != user.id
+flash[:notice] = "this is not your game "
+redirect_to
+end
+end
 end
