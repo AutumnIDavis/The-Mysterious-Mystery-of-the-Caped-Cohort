@@ -4,6 +4,9 @@ class StagesController < ApplicationController
 def show
 end
 
+  def index
+    @stages = Stage.all
+  end
 
 def new
 end
@@ -37,4 +40,4 @@ end
 
 def update_game
 end
-end 
+end
