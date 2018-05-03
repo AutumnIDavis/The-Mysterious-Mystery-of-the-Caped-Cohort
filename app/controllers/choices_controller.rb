@@ -31,7 +31,7 @@ def update
     @choice = Choice.find(params[:id])
     @choice.update(choice_params)
     @stage = Stage.find(params[:stage_id])
-    redirect_to scrollz_design_path(@scrollz, @chapter)
+    redirect_to scrollz_design_path(@scrollz, @stage)
 end
 
 private

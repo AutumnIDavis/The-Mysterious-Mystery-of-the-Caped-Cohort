@@ -111,7 +111,7 @@ class StagesController < ApplicationController
 
   def is_user_in_control(scrollz, user)
     if scrollz.user_id != user.id
-      flash[:notice] = "Cannot edit another user's story"
+      flash[:notice] = "Cannot edit this story"
       redirect_to scrollz_path(@scrollz)
     end
   end

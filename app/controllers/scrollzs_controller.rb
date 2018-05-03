@@ -54,7 +54,7 @@ class ScrollzsController < ApplicationController
   def is_the_user_the_owner(scrollz, user)
     if scrollz.user_id != user.id
       flash[:notice] = "?"
-      redirect_to scrollz_path(@adventure)
+      redirect_to scrollz_path(@scrollz)
     end
   end
 
