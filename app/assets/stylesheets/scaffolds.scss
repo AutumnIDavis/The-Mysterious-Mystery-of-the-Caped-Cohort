@@ -98,24 +98,21 @@ label {
     background-size: cover;
 }
 
-.stage2 {
-    /* The image used */
-    background-image: url("classroom");
-
-    /* Set a specific height */
+.stage1point5 {
     min-height: 500px;
-
-    /* Create the chapllax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 2;
+    position: absolute;
+    top: -0%;
+    left: 7%;
 }
 
-
-.stage3 {
+.stage2 {
     /* The image used */
-    background-image: url("space");
+    background-image: url("classroom");
 
     /* Set a specific height */
     min-height: 500px;
