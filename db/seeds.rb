@@ -1,95 +1,23 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
- scrollz = "A murder has been commited"
 
-description = "The Who-Dunnit of Who-dunnits "
+# Game.create!([
+#   {scrollz: "Introduction", body: "It's night, you can barely see the dirt path in front of you as you walk through the forest. You make out a faint light in the distance to your right. To reach it, you'll have to leave the trail."},
+#   {scrollz: "The Day of reckoning", body: "You walk towards the light, and it gets brighter. When you get near, you see that it's coming from an old, run-down cottage."},
+#   {scrollz: "The end", body: "You ignore the light, continuing along the path into the darkness. You hear wolves howling nearby. In a few seconds, they've reached you! At least you made a good meal for them."},
+#   {scrollz: "Inside", body: "There's a fire burning in the hearth, but there doesn't appear to be anyone here. At the table are three bowls of soup. Your stomach growls: you're hungry."},
+#   {scrollz: "Who-dunnit", body: "You sit down and take a bite of the soup. It burns your tongue! Not to be discouraged, you try the second bowl. Too cold!\r\n\r\nFinally, you take a bite out of the third bowl. This one is perfect! You just finish eating when you hear the door open."},
+#   {scrollz: "wheres steven", body: "You sit outside the cottage all night, freezing. Finally, the sun rises, and you go home."},
+#   {scrollz: "The suspects", body: "You jump under the bed just in time. To your surprise, three bears walk through the door."},
+#   {scrollz: "going to lunch", body: "You turn to look who it is, only to see three bears! The largest swipes at you, throwing you out the door into the cold. You sit there freezing until morning, and then return home."}
+# {scrollz: "the ducks ", body: "You turn to look who it is, only to see three bears! The largest swipes at you, throwing you out the door into the cold. You sit there freezing until morning, and then return home."}
+# ])
 
-stages = [""]
-
-choices = ["","","","","","","","","","","","","","","",""]
-
-
-user= User.create(user_name:"admin", email:
-"admin@mail.com", password: "1111111",
-password_conformation: "1111111")
-
-Adventure.create(title: adventure, synopsis: synopsis, image: Rack::Test::UploadedFile.new(Rails.root + 'app/assets/images/Bristol.jpeg', 'image/jpeg'), user_id: user.id)
-
-
-
-
-scrollz = Scrollz.where(title: "A murder has been commited").first
-
-Stage.create(description: stages[0], scrollz_id: scrollz.id)
-
-Stage.create(description: stages[1], scrollz_id: scrollz.id, parent_choice_id: 1)
-
-Stage.create(description: stages[2], scrollz_id: scrollz.id, parent_choicestages
-Stage.create(description: stages[3], scrollz_id: scrollz.id, parent_choice_id: 3)
-
-Stage.create(description: stages[4], scrollz_id: scrollz.id, parent_choice_id: 4)
-
-Stage.create(description: stages[5], scrollz_id: scrollz.id, parent_choice_id: 5)
-
-Stage.create(description: stages[6], scrollz_id: scrollz.id, parent_choice_id: 6)
-
-Stage.create(description: stages[7], scrollz_id: scrollz.id, parent_choice_id: 7)
-
-Stage.create(description: stages[8], scrollz_id: scrollz.id, parent_choice_id: 9)
-
-Stage.create(description: stages[7], scrollz_id: scrollz.id, parent_choicscrollz
-Stage.create(description: stages[8], scrollz_id: scrollz.id, parent_choice_id: 10)
-
-Stage.create(description: stages[9], scrollz_id: scrollz.id, parent_choice_id: 11)
-
-Stage.create(description: stages[10], scrollz_id: scrollz.id, parent_choice_id: 12)
-
-Stage.create(description: stages[9], scrollz_id: scrollz.id, parent_choice_id: 13)
-
-Stage.create(description: stages[10], scrollz_id: scrollz.id, parent_choice_id: 14)
-
-
-
-
-
-
-
-Choice.create(option: choices[0], stage_id: 1)
-
-Choice.create(option: choices[1], stage_id: 1)
-
-Choice.create(option: choices[2], stage_id: 2)
-
-Choice.create(option: choices[3], stage_id: 2)
-
-Choice.create(option: choices[4], stage_id: 3)
-
-Choice.create(option: choices[5], stage_id: 3)
-
-Choice.create(option: choices[6], stage_id: 5)
-
-Choice.create(option: choices[6], stage_id: 6)
-
-Choice.create(option: choices[7], stage_id: 5)
-
-Choice.create(option: choices[7], stage_id: 6)
-
-Choice.create(option: choices[8], stage_id: 8)
-
-Choice.create(option: choices[9], stage_id: 8)
-
-Choice.create(option: choices[8], stage_id: 10)
-
-Choice.create(option: choices[9], stage_id: 10)
-
-
-
-
-
-
-Choice.create(option: "Start", stage_id: nil)
+])
+# Path.create!([
+#   {choice: "ask questions", from_stage_id: 1, to_stage_id: 2},
+#   {choice: "find clues", from_stage_id: 1, to_stage_id: 3},
+#   {choice: "go home", from_stage_id: 2, to_stage_id: 4},
+#   {choice: "get another job", from_stage_id: 4, to_stage_id: 5},
+#   {choice: "mind your buisiness", from_stage_id: 2, to_stage_id: 6},
+#   {choice: "Hide in 806 with Bri!", from_stage_id: 5, to_stage_id: 7},
+#   {choice: "Introduce yourself", from_stage_id: 5, to_stage_id: 8}
+# ])

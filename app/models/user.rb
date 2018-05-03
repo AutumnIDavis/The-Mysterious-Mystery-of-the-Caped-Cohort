@@ -6,6 +6,8 @@ class User < ApplicationRecord
 
 
 
-#validates
 
+  has_many :games
+  has_many :stages, through: :games
+  has_many :choices, through: :games
 end
