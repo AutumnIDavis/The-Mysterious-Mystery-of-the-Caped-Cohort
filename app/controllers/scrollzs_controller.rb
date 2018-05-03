@@ -27,10 +27,10 @@ class ScrollzsController < ApplicationController
     @scrollz.user_id = current_user.id
     if @scrollz.save
       @scrollz_id = @scrollz.id
-      redirect_to
+      redirect_to new_scrollz_path_stage_path(@scrollz)
     else
       flash[:error] = "????"
-      redirect_to
+      redirect_to new_scrollz_path
     end
   end
 
@@ -39,7 +39,7 @@ class ScrollzsController < ApplicationController
     is_the_user_the_owner(@scrollz, current_user)
     @stages = Stages.where(scrollz_id: @scrollz.id)
     unless @stages[0]
-      redirect_to
+      redirect_to new_scrollz_path_stage_path(@scrollz)
     end
     @scrollz_id = @scrollz.id
   end
@@ -54,7 +54,7 @@ class ScrollzsController < ApplicationController
   def is_the_user_the_owner(scrollz, user)
     if scrollz.user_id != user.id
       flash[:notice] = "?"
-      redirect_to
+      redirect_to scrollz_path(@scrollz)
     end
   end
 
