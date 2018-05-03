@@ -16,7 +16,7 @@ def create
 @choice = Choice.new(choice_params)
 @choice.stage_id = stage_id
 @choice.save
-redirect_to
+redirect_to new_scrollz_path_stage_path(@scrollz)
 end
 
 def edit
@@ -26,7 +26,13 @@ def edit
 end
 
 def update
-end 
+    @scrollz= Scrollz.find(params[:scrollz_id])
+    is_the_user_the_owner(@scrollz, current_user)
+    @choice = Choice.find(params[:id])
+    @choice.update(choice_params)
+    @stage = Stage.find(params[:stage_id])
+    redirect_to scrollz_design_path(@scrollz, @chapter)
+end
 
 private
 
@@ -37,7 +43,7 @@ end
 def is_user_in_control
 if scrollz.user_id != user.id
 flash[:notice] = "this is not your game "
-redirect_to
+redirect_to scrollz_path(@scrollz)
 end
 end
 end

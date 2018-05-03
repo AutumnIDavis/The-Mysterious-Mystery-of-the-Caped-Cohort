@@ -35,7 +35,7 @@ class StagesController < ApplicationController
       @stage.scrollz_id = @adventure.id
       @stage.parent_choice_id = @choice.id
       @stage.save
-    redirect_to
+    redirect_to scrollz_design_path
   end
 
   def edit
@@ -109,7 +109,7 @@ class StagesController < ApplicationController
     game.update(stages: "#{game.stage},#{params[:id]}", choices: "#{game.choices},#{choice_id}") if choice_id
   end
 
-  def is_the_user_the_owner(scrollz, user)
+  def is_user_in_control(scrollz, user)
     if scrollz.user_id != user.id
       flash[:notice] = "Cannot edit another user's story"
       redirect_to scrollz_path(@scrollz)
