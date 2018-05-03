@@ -84,6 +84,20 @@ label {
   display: block;
 }
 
+.text2 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font: bold 28px Arial, sans-serif;
+    color: white;
+    z-index: 1;
+    text-shadow: 0 0 8px #222;
+    text-align: center;
+}
+
 .stage1 {
     /* The image used */
     background-image: url("cloudy sky");
