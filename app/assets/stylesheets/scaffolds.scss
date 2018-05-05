@@ -370,7 +370,7 @@ label {
 }
 
 #chap14 {
-  background-image: url(12);
+  background-image: url("12");
   font-size: 36px;
   position: relative;
   top: -20px;
@@ -450,23 +450,24 @@ label {
 }
 
 #chap22 {
-  background-image: url("20");
+  background-image: url("sophia 3");
   font-size: 36px;
   position: relative;
   top: -20px;
   width: 84%;
   height: 954px;
   left: 0%;
+  background-repeat: no-repeat;
 }
 
 #chap23 {
-  background-image: url("21");
+  background-image: url("21 2");
   font-size: 36px;
   position: relative;
   top: -20px;
   width: 100%;
   height: 954px;
-  left: 0%;
+  left: 4%;
 }
 
 #chap24 {
@@ -480,12 +481,12 @@ label {
 }
 
 #chap25 {
-  background-image: url("23");
+  background-image: url(23);
   font-size: 36px;
   position: relative;
   top: -20px;
   width: 100%;
-  height: 954px;
+  height: 1071px;
   left: 0%;
 }
 
@@ -494,9 +495,10 @@ label {
   font-size: 36px;
   position: relative;
   top: -20px;
-  width: 84%;
+  width: 103%;
   height: 954px;
-  left: 16%;
+  left: 0%;
+  background-repeat: no-repeat;
 }
 
 #chap27 {
@@ -524,9 +526,10 @@ label {
   font-size: 36px;
   position: relative;
   top: -20px;
-  width: 84%;
+  width: 103%;
   height: 954px;
-  left: 16%;
+  left: 0%;
+  background-repeat: no-repeat;
 }
 
 #chap30 {
@@ -534,9 +537,10 @@ label {
   font-size: 36px;
   position: relative;
   top: -20px;
-  width: 84%;
+  width: 100%;
   height: 954px;
-  left: 16%;
+  left: 0%;
+  background-repeat: no-repeat;
 }
 
 #chapBreak {
@@ -565,9 +569,20 @@ label {
   font-size: 36px;
   position: relative;
   top: -20px;
+  width: 103%;
+  height: 954px;
+  left: -5%;
+}
+
+#joe {
+  background-image: url("joe");
+  font-size: 36px;
+  position: relative;
+  top: -10px;
   width: 100%;
   height: 954px;
-  left: 0%;
+  left: 34%;
+  background-repeat: no-repeat;
 }
 
 .break{
