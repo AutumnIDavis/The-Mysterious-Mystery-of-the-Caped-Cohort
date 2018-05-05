@@ -569,3 +569,65 @@ label {
   height: 954px;
   left: 0%;
 }
+
+.break{
+  display: inline-block;
+  color: red;
+  margin: 2%;
+  text-align: center;
+}
+
+.class{
+  display: inline-block;
+  color: red;
+  margin: 2%;
+  text-align: center;
+}
+
+.class1 a{
+  display: inline-block;
+  color: red;
+  margin: 2%;
+  text-align: center;
+  position: relative;
+  left: 4%;
+  font-size: 41px;
+  top: 64px;
+}
+
+.class1 a:hover{
+  display: inline-block;
+  color: rgb(98, 136, 191);
+  margin: 2%;
+  text-align: center;
+}
+
+
+
+.class a{
+  display: inline-block;
+  color: red;
+  margin: 2%;
+  text-align: center;
+}
+
+.class a:hover{
+  display: inline-block;
+  color: rgb(98, 136, 191);
+  margin: 2%;
+  text-align: center;
+}
+
+.break a{
+  display: inline-block;
+  color: red;
+  margin: 2%;
+  text-align: center;
+}
+
+.break a:hover{
+  display: inline-block;
+  color: rgb(98, 136, 191);
+  margin: 2%;
+  text-align: center;
+}
