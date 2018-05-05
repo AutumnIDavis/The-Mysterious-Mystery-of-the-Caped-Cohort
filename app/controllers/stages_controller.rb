@@ -5,10 +5,9 @@ class StagesController < ApplicationController
 
   end
 
+
   def new
-    @scrollz = Scrollz.find(params[:scrollz_id])
-    is_the_user_the_owner(@scrollz, current_user)
-    @stage = Stage.new
+
   end
 
   def create
@@ -27,7 +26,7 @@ class StagesController < ApplicationController
   end
 
   def edit
-    redirect_to stages_edit_path
+
   end
 
   def update
