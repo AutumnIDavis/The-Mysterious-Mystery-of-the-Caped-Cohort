@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_05_03_154048) do
+ActiveRecord::Schema.define(version: 2018_05_03_213844) do
 
   create_table "choices", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -24,8 +24,9 @@ ActiveRecord::Schema.define(version: 2018_05_03_154048) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "stages"
-    t.string "choices"
     t.integer "user_id"
+    t.string "scrollz"
+    t.string "body"
   end
 
   create_table "players", force: :cascade do |t|
@@ -48,6 +49,7 @@ ActiveRecord::Schema.define(version: 2018_05_03_154048) do
     t.integer "scrollz_id"
     t.integer "parent_choice_id"
     t.boolean "to_destroy"
+    t.integer "stage_id"
   end
 
   create_table "users", force: :cascade do |t|

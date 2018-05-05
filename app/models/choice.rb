@@ -1,7 +1,6 @@
 class Choice < ApplicationRecord
-def normalize_blank_values
-    attributes.each do |column, value|
-      self[column].present? || self[column] = nil
-    end
-  end
-end
+  belongs_to :stage, class_name: "Stage"
+
+
+
+end 
