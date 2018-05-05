@@ -1,9 +1,9 @@
 class Stage < ApplicationRecord
 
 
-belongs_to :scrollz
-  has_many :choices, dependent: :destroy
 
-  accepts_nested_attributes_for :choices
+has_many :choices, dependent: :destroy
+
+
 
 end

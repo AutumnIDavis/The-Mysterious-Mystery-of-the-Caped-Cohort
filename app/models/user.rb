@@ -5,4 +5,9 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
 
+
+
+  has_many :games
+  has_many :stages, through: :games
+  has_many :choices, through: :games
 end
