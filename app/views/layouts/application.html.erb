@@ -10,15 +10,21 @@
 
   </head>
 
-  <body onload="myFunction()">
+  <body onload="rain(),door()">
 
     <script>
-    function myFunction() {
+    function rain() {
       var thunder = document.getElementById("rain")
+      thunder.play()
+    };
 
-      thunder.play();
-      setTimeout("countDown.play()",10000);
-      }
+
+
+      function door() {
+        var creak = document.getElementById("door")
+        // setInterval(function(){ creak.play(); }, 5000);
+      };
+
     </script>
 
 
