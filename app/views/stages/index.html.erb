@@ -1,19 +1,13 @@
                                             <!-- MAIN PAGE -->
 
+  <%= audio_tag "The Pink Panther Theme Song.mp3", :id => "pink" %>
+
+
   <div class="stage1">
 
 
     <div id="chap1" >
         <%= audio_tag "rain.mp3", :id => "rain", :onload => "playSound()" %>
-
-
-<script>
-
-</script>
-
-
-
-
       <br><br><br><br><br>
     </div>
 
@@ -45,8 +39,7 @@
 
       <div id="chap4">
         <br><br><br><br><br>
-        <!-- <div class="speech7"> -->
-              <br>              <!-- <a href="#chap4">Next</a> -->
+        <%= audio_tag "Door Open and Close.mp3", :id => "door", :onload => "playSound()" %>
           </div>
 
 
@@ -159,44 +152,8 @@
     </div>
 
 
-    <script language="JavaScript1.2">
+    <script>
 
 
 
-    //
-    //
-    // var currentpos=0,alt=1,curpos1=0,curpos2=-1
-    //   function initialize(){
-    //   startit()
-    //   }
-    //   function scrollwindow(){
-    //   if (document.all)
-    //     temp=document.body.scrollTop
-    //   else
-    //     temp=window.pageYOffset
-    //   if (alt==0)
-    //     alt=1
-    //   else
-    //     alt=0
-    //   if (alt==0)
-    //     curpos1=temp
-    //   else
-    //     curpos2=temp
-    //   if (curpos1!=curpos2){
-    //     if (document.all)
-    //       currentpos=document.body.scrollTop+1
-    //   else
-    //     currentpos=window.pageYOffset+1
-    //     window.scroll(0,currentpos)
-    // }
-    //   else{
-    //       currentpos=0
-    //       window.scroll(0,currentpos)
-    // }
-    // }
-    //   function startit(){
-    //       setInterval("scrollwindow()",1)
-    // }
-    //     window.onload=initialize
-    //
-    //  </script>
+     </script>

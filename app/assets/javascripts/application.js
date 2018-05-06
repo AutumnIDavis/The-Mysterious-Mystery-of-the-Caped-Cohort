@@ -14,7 +14,3 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
-
-function playSound() {
-    alert("IT WORKS!!")
-};

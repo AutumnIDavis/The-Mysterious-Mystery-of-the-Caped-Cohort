@@ -10,16 +10,7 @@
 
   </head>
 
-  <body onload="myFunction()">
-
-    <script>
-    function myFunction() {
-      var thunder = document.getElementById("rain")
-
-      thunder.play();
-      setTimeout("countDown.play()",10000);
-      }
-    </script>
+  <body onload="initialize(),pink()">
 
 
     <%= yield %>
