@@ -10,22 +10,7 @@
 
   </head>
 
-  <body onload="rain(),door()">
-
-    <script>
-    function rain() {
-      var thunder = document.getElementById("rain")
-      thunder.play()
-    };
-
-
-
-      function door() {
-        var creak = document.getElementById("door")
-        // setInterval(function(){ creak.play(); }, 5000);
-      };
-
-    </script>
+  <body onload="initialize(),pink()">
 
 
     <%= yield %>
