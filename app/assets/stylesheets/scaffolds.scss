@@ -8,11 +8,11 @@ body {
   width: 104%;
 }
 
-p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-}
+// p, ol, ul, td {
+//   font-family: verdana, arial, helvetica, sans-serif;
+//   font-size: 13px;
+//   line-height: 18px;
+// }
 
 pre {
   background-color: #eee;
@@ -287,6 +287,7 @@ label {
   width: 122%;
   height: 949px;
   left: 0%;
+  background-repeat: no-repeat;
 }
 #chap5 {
   // background-color: #ffffff94;
@@ -307,6 +308,7 @@ label {
   width: 113%;
   height: 973px;
   left: -8%;
+  background-repeat: no-repeat;
 }
 
 #chap7 {
@@ -328,6 +330,7 @@ label {
    width: 122%;
    height: 949px;
    left: 0%;
+   background-repeat: no-repeat;
 }
 
 #chap10 {
@@ -359,14 +362,25 @@ label {
   left: 16%;
 }
 
-#chap13 {
-  background-image: url("11");
+#chap12pFive{
+  background-image: url("sharif");
   font-size: 36px;
   position: relative;
   top: -20px;
   width: 84%;
-  height: 954px;
-  left: 16%;
+  height: 754px;
+  left: 28%;
+  background-repeat: no-repeat;
+}
+
+#chap13 {
+  background-image: url(11);
+  font-size: 36px;
+  position: relative;
+  top: -20px;
+  width: 84%;
+  height: 949px;
+  left: -10%;
 }
 
 #chap14 {
@@ -397,6 +411,17 @@ label {
   width: 100%;
   height: 954px;
   left: 0%;
+}
+
+#chap16point5{
+  background-image: url(break);
+  font-size: 36px;
+  position: relative;
+  top: -20px;
+  width: 153%;
+  height: 954px;
+  left: 28%;
+  background-repeat: no-repeat;
 }
 
 #chap17 {
@@ -450,7 +475,7 @@ label {
 }
 
 #chap22 {
-  background-image: url("sophia 3");
+  background-image: url("sophia");
   font-size: 36px;
   position: relative;
   top: -20px;
@@ -461,7 +486,7 @@ label {
 }
 
 #chap23 {
-  background-image: url("21 2");
+  background-image: url("21");
   font-size: 36px;
   position: relative;
   top: -20px;
@@ -486,7 +511,7 @@ label {
   position: relative;
   top: -20px;
   width: 100%;
-  height: 1071px;
+  height: 951px;
   left: 0%;
 }
 
@@ -554,7 +579,7 @@ label {
 }
 
 #chapHeap {
-  background-image: url(heap);
+  background-image: url("heap");
   font-size: 36px;
   position: relative;
   top: 560px;
@@ -578,11 +603,85 @@ label {
   background-image: url("joe");
   font-size: 36px;
   position: relative;
-  top: -10px;
+  top: -153px;
   width: 100%;
-  height: 954px;
+  height: 1071px;
   left: 34%;
   background-repeat: no-repeat;
+}
+
+.q1{
+  font-size: 31px;
+  position: relative;
+  top: -168px;
+  color: blue;
+  left: 4%;
+}
+
+.q2{
+  margin: 0% 2%;
+  font-size: 31px;
+  position: relative;
+  top: -127px;
+  color: blue;
+  left: 2%;
+}
+
+#a1 {
+  /* margin: 0% 2%; */
+  font-size: 31px;
+  position: relative;
+  top: -752px;
+  color: blue;
+  left: 4%;
+  transition: all ease 0.8s;
+}
+
+
+#a2 {
+  margin: 0% 2%;
+  font-size: 31px;
+  position: relative;
+  top: -739px;
+  color: blue;
+  left: 1%;
+  transition: all ease 0.8s;
+  }
+
+.q1 a{
+  color: black;
+  position: relative;
+  top: -788px;
+  text-align: center;
+  font-size: 35px;
+  background-color: #6ab9ad3d;
+  padding: 20px;
+}
+
+.q1 a:hover{
+  position: relative;
+  top: -788px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(136, 8, 59);
+}
+
+.q2 a{
+  color: black;
+  position: relative;
+  top: -788px;
+  text-align: center;
+  font-size: 35px;
+  background-color: #6ab9ad3d;
+  padding: 20px;
+}
+
+.q2 a:hover{
+  position: relative;
+  top: -788px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(136, 8, 59);
 }
 
 .break{

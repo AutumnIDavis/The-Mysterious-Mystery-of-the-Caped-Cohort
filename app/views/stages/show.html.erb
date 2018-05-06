@@ -6,5 +6,41 @@
   <div class="class1">
     <a href="/stages/#chap19">Go Back</a>
   </div>
+  <div class="class1">
+    <a href="/stages/new">To Breakroom</a>
+  </div>
   <div id="joe"> </div>
 </div>
+
+<div class="q1">
+  <a onclick="toggle_visibility('a1');">"How's it going?"</a>
+  <div id="a1">
+    <p>"Fine, I guess."</p>
+  </div>
+</div>
+
+
+
+<br><br><br><br><br><br>
+
+<div class="q2">
+  <a onclick="toggle_visibility('a2');">"Find anything?"</a>
+  <div id="a2">
+    <p>"Nothing in here. Try the breakroom."</p>
+  </div>
+</div>
+
+
+
+
+<script>
+function toggle_visibility(a1) {
+  var e = document.getElementById(a1);
+  e.style.display = ((e.style.display!='none') ? 'none' : 'block');
+}
+
+function toggle_visibility(a2) {
+  var o = document.getElementById(a2);
+  o.style.display = ((o.style.display!='none') ? 'none' : 'block');
+}
+</script>
