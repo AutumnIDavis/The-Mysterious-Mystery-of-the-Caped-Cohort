@@ -20,6 +20,15 @@ ActiveRecord::Schema.define(version: 2018_05_03_213844) do
     t.string "option"
   end
 
+  create_table "events", force: :cascade do |t|
+    t.string "name"
+    t.date "event_date"
+    t.text "description"
+    t.string "place"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "games", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
