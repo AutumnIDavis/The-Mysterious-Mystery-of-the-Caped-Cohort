@@ -12,7 +12,7 @@
 
     <div id="chap1" >
         <%= audio_tag "rain.mp3", :id => "rain", :onload => "playSound()" %>
-    <%= image_tag "cloud.png", :style => "width: 50%;left: -16%;position: relative;top: 102px;"%>
+        <%= image_tag "cloud.png", :style => "width: 50%;left: -16%;position: relative;top: 102px;"%>
       <br><br><br><br><br>
     </div>
 
@@ -189,37 +189,49 @@
               <%= image_tag "speech/12", :style => "width: 35%;left: -56%;position: relative;top: 102px;"%>
         </div>
     </div>
-<!--
+
     <script>
-    var currentpos=0,alt=1,curpos1=0,curpos2=-1
-    function initialize(){
-    startit()
-    }
-    function scrollwindow(){
-    if (document.all)
-      temp=document.body.scrollTop
-    else
-      temp=window.pageYOffset
-    if (alt==0)
-      alt=1
-    else
-      alt=0
-    if (alt==0)
-      curpos1=temp
-    else
-      curpos2=temp
-    if (curpos1!=curpos2){
-      if (document.all)
-        currentpos=document.body.scrollTop+1
-    else
-      currentpos=window.pageYOffset+1
-      window.scroll(0,currentpos)
-    }
 
-    }
-    function startit(){
-       time = setInterval("scrollwindow()",3)
-    }
-      window.onload=initialize
+      function backgroundM() {
+        document.getElementById("pink").play();
+        // initialize();
+        rain();
+        Allegra();
+        Sharif();
+        Frida();
+      }
 
-    </script> -->
+      backgroundM();
+
+    // var currentpos=0,alt=1,curpos1=0,curpos2=-1
+    // function initialize(){
+    // startit()
+    // }
+    // function scrollwindow(){
+    // if (document.all)
+    //   temp=document.body.scrollTop
+    // else
+    //   temp=window.pageYOffset
+    // if (alt==0)
+    //   alt=1
+    // else
+    //   alt=0
+    // if (alt==0)
+    //   curpos1=temp
+    // else
+    //   curpos2=temp
+    // if (curpos1!=curpos2){
+    //   if (document.all)
+    //     currentpos=document.body.scrollTop+1
+    // else
+    //   currentpos=window.pageYOffset+1
+    //   window.scroll(0,currentpos)
+    // }
+    //
+    // }
+    // function startit(){
+    //    time = setInterval("scrollwindow()",3)
+    // }
+    //   window.onload=initialize
+
+    </script>
