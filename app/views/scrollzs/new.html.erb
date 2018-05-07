@@ -1,43 +1,31 @@
+
+  <div class="stage1">
+
+
+    <div id="chap1" >
+        <%= audio_tag "rain.mp3", :id => "rain", :onload => "playSound()" %>
+    <%= image_tag "cloud.png", :style => "width: 50%;left: -16%;position: relative;top: 102px;"%>
+      <br><br><br><br><br>
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Create </title>
+    <title></title>
   </head>
   <body>
-    <div class="registration_forms">
 
-      <div class="form_title_create">
-        <h2 class="sign_up_h2">Create your own!</h2>
-      </div>
 
-      <%= form_for @scrollz do |form| %>
-      <div class="field">
-        <%= form.label :title, class: "form_heading" %> <br>
-      </div>
-
-      <div class="field">
-        <%= form.text_field :title, class: "form_input_box", required: "true" %> <br>
-      </div>
-
-      <div class="field">
-        <%= form.label :description, class: "form_heading" %> <br>
-      </div>
-
-      <div class="field">
-        <%= form.text_field :description, class: "form_input_box", required: "true" %> <br>
-      </div>
-
-      <div class="field">
-        <%= form.label :image, class: "form_heading" %> <br>
-        <%= form.file_field :image, required: "true" %> <br>
-      </div>
-
-      <div class="field">
-        <%= form.button :submit, value: "Create ", id: "small_log_in_btn_create" %>
-      </div>
+    <div class="form_play">
+      <% if @first_stage %>
+        <%= link_to "Play", scrollz_stage_path(@scrollz, @first_stage), class: "start_button"%>
+      <% end %>
+      <% if current_user && @scrollz_id == current_user.id %>
 
       <% end %>
     </div>
   </body>
 </html>
+
+
+    </div>
