@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- BREAKROOM -->
 
 <!-- <audio id="audio_play">
@@ -132,3 +133,30 @@ setInterval("scrollwindow()",3)
 window.onload=initialize -->
 
 </script>
+=======
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Adventure</title>
+
+  </head>
+  <body>
+
+    <div class="main">
+
+    </div>
+
+    <div class="scrollz">
+        <% @scrollz.each do |scrollz|%>
+          <div class="scrollz">
+            <%= link_to "#{scrollz.title}", scrollz_path(scrollz.id), class: "scrollz_title" %>
+
+            </div>
+          </div>
+        <% end %>
+    </div>
+
+  </body>
+</html>
+>>>>>>> 40167149ec163c14f4e6eea73cddede5c0d52daa

@@ -1,1 +1,24 @@
+<<<<<<< HEAD
 <p id="notice"><%= notice %></p>
+=======
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="description">
+      <%= @scrollz.description %>
+    </div>
+    <div class="form_play">
+      <% if @first_stage %>
+        <%= link_to "Play", scrollz_stage_path(@scrollz, @first_stage), class: "start_button"%>
+      <% end %>
+      <% if current_user && @scrollz.user_id == current_user.id %>
+        <%= link_to "Edit", scrollz_create_path(@scrollz), class: "start_button" %>
+      <% end %>
+    </div>
+  </body>
+</html>
+>>>>>>> 40167149ec163c14f4e6eea73cddede5c0d52daa
