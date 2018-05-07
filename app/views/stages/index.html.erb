@@ -1,33 +1,13 @@
-<!-- <p id="notice"><%= notice %></p>
+                                            <!-- MAIN PAGE -->
 
-<h1>Stages</h1> -->
+  <%= audio_tag "The Pink Panther Theme Song.mp3", :id => "pink" %>
 
-<!-- <table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @stages.each do |stage| %>
-      <tr>
-        <td><%= link_to 'Show', stage %></td>
-        <td><%= link_to 'Edit', edit_stage_path(stage) %></td>
-        <td><%= link_to 'Destroy', stage, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Stage', new_stage_path %> -->
 
   <div class="stage1">
 
 
-    <div id="chap1">
+    <div id="chap1" >
+        <%= audio_tag "rain.mp3", :id => "rain", :onload => "playSound()" %>
       <br><br><br><br><br>
     </div>
 
@@ -35,10 +15,8 @@
 
     <div id="chap2">
       <br><br><br><br><br>
-      <div class="speech2">
             <br>
         <div id="right">
-            <!-- <a href="#chap3">Next</a> -->
         </div>
       </div>
     </div>
@@ -54,335 +32,143 @@
 
       <div id="chap3">
         <br><br><br><br><br>
-        <div class="speech7">
+        <%= image_tag "music.gif", :style => "width: 18%;left: 78%;position: relative;top: 42%;"%>
               <br>
-          <div id="right">
-              <!-- <a href="#chap4">Next</a> -->
-          </div>
         </div>
-      </div>
+
+
+      <div id="chap4">
+        <br><br><br><br><br>
+        <%= audio_tag "Door Open and Close.mp3", :id => "door", :onload => "playSound()" %>
+          </div>
+
+
+
+      <div id="chap5">
+        <br><br><br><br><br>
+          </div>
+
 
 
           <div id="chap6">
             <br><br><br><br><br>
-            <div class="speech11">
                   <br>
-              <div id="right">
-                  <!-- <a href="#chap7">Next</a> -->
+                    <div class="who">
+                      <%= image_tag "speech/1", :style => "width: 35%;left: 21%;position: relative;top: -68px;"%>
+                    </div>
               </div>
-            </div>
-          </div>
+
 
 
           <div id="chap7">
             <br><br><br><br><br>
-            <div class="speech12">
-                  <br>
-              <div id="right">
-                  <!-- <a href="#chap8">Next</a> -->
+                        <br>
+                      <%= image_tag "speech/2", :style => "width: 35%;left: 21%;position: relative;top: -68px;"%>
               </div>
-            </div>
-          </div>
+
 
           <div id="chap8">
             <br><br><br><br><br>
-            <div class="speech8">
-                  <br>
-              <div id="right">
-                  <!-- <a href="#chap9">Next</a> -->
-              </div>
+                    <%= image_tag "speech/3", :style => "width: 35%;left: 0%;position: relative;top: -96px;"%>
             </div>
-          </div>
 
-          <div id="chap9">
+                                <%= image_tag "speech/4", :style => "width: 97%;position: relative;top: -150px;background-color: #a94a4a82;height: 848px"%>
+
+           <!-- <div id="chap9">
             <br><br><br><br><br>
-            <div class="speech9">
-                  <br>
-              <div id="right">
-                  <!-- <a href="#chap10">Next</a> -->
-              </div>
-            </div>
-          </div>
+            </div> -->
 
           <div id="chap10">
             <br><br><br><br><br>
-            <div class="speech10">
-                  <br>
-              <div id="right">
-                  <!-- <a href="#chap11">Next</a> -->
-              </div>
             </div>
-          </div>
 
           <div id="chap11">
             <br><br><br><br><br>
-            <div class="speech13">
-                  <br>
-              <div id="right">
-                  <!-- <a href="#chap12">Next</a> -->
-              </div>
+            <%= image_tag "ques.gif", :style =>"width: 131%;left: -13%;position: relative;top: -21%;width: 22%; left: 90%;"%>
+
+            <%= image_tag "speech/5", :style => "width: 35%;left: 16%;position: relative;top: -124px;"%>
+            <%= image_tag "speech/6", :style => "width: 55%;left: 83%;position: relative;top: -319px;"%>
             </div>
-          </div>
 
 
           <div id="chap12">
             <br><br><br><br><br>
-            <div class="speech12">
-                  <br>
-              <div id="right">
-                  <a href="#chap13">Next</a>
-              </div>
+            <%= image_tag "speech/7", :style => "width: 55%;left: -28%;position: relative;top: 215px;"%>
             </div>
-          </div>
+
+            <div id="chap12pFive">
+              <br><br><br><br><br>
+              <%= image_tag "zzz.gif", :style =>"width: 131%;left: -13%;position: relative;top: -18%;width: 22%;left: 44%;"%>
+              </div>
 
 
 
     <div id="chap13">
       <br><br><br><br><br>
-      <div class="speech12">
-            <br>
-        <div id="right">
-            <a href="#chap13">Next</a>
-        </div>
+            <%= image_tag "speech/8", :style => "width: 77%;left: 60%;position: relative;top: 24px;"%>
       </div>
+
+
+
+        <div id="chap14">
+          <br><br><br><br><br>
+            <%= image_tag "speech/9", :style => "width: 42%;left: 16%;position: relative;top: -72px;"%>
+            <%= image_tag "speech/10", :style => "width: 42%;left: 19%;position: relative;top: -20px;"%>
+        </div>
+
+
+
+        <div id="chap15">
+          <br><br><br><br><br>
+          <%= image_tag "speech/13", :style => "width: 58%;left: 24%;position: relative;top: -401px;"%>
+        </div>
+
+
+
+        <div id="chap16">
+          <br><br><br><br><br>
+        </div>
+
+        <div id="chap16point5">
+          <br><br><br><br><br>
+        </div>
+
+
+
+        <div id="chap17">
+          <br><br><br><br><br>
+        </div>
+
+
+
+        <div id="chap18">
+          <br><br><br><br><br>
+          <%= image_tag "speech/11", :style => "width: 35%;left: 13%;position: relative;top: -264px;"%>
+        </div>
+
+
+
+        <div id="chap19">
+          <br><br><br><br><br>
+
+              <div class="class">
+                <a href="/stages/show">Check out the <br><br> Classroom</a>
+              </div>
+
+              <div class="break">
+                <a href="/stages/new">Check out the <br><br> Breakroom</a>
+              </div>
+
+              <%= image_tag "speech/12", :style => "width: 35%;left: -56%;position: relative;top: 102px;"%>
+
+        </div>
+
+
     </div>
 
 
-
-<div id="chap14">
-  <br><br><br><br><br>
-  <div class="speech12">
-        <br>
-    <div id="right">
-        <a href="#chap13">Next</a>
-    </div>
-  </div>
-</div>
+    <script>
 
 
 
-<div id="chap15">
-  <br><br><br><br><br>
-  <div class="speech12">
-        <br>
-    <div id="right">
-        <a href="#chap13">Next</a>
-    </div>
-  </div>
-</div>
-
-
-
-<div id="chap16">
-  <br><br><br><br><br>
-  <div class="speech12">
-        <br>
-    <div id="right">
-        <a href="#chap13">Next</a>
-    </div>
-  </div>
-</div>
-
-
-
-<div id="chap17">
-  <br><br><br><br><br>
-  <div class="speech12">
-        <br>
-    <div id="right">
-        <a href="#chap13">Next</a>
-    </div>
-  </div>
-</div>
-
-
-
-<div id="chap18">
-  <br><br><br><br><br>
-  <div class="speech12">
-        <br>
-    <div id="right">
-        <a href="#chap13">Next</a>
-    </div>
-  </div>
-</div>
-
-
-
-<div id="chap19">
-  <br><br><br><br><br>
-  <div class="speech12">
-        <br>
-    <div id="right">
-        <a href="#chap13">Next</a>
-    </div>
-  </div>
-</div>
-</div>
-
-
-
-<div class="stage3">
-
-
-<div id="chap20">
-  <br><br><br><br><br>
-  <div class="speech12">
-        <br>
-    <div id="right">
-        <a href="#chap13">Next</a>
-    </div>
-  </div>
-</div>
-
-
-<div id="chap21">
-  <br><br><br><br><br>
-  <div class="speech12">
-        <br>
-    <div id="right">
-        <a href="#chap13">Next</a>
-    </div>
-  </div>
-</div>
-
-
-<div id="chap22">
-  <br><br><br><br><br>
-  <div class="speech12">
-        <br>
-    <div id="right">
-        <a href="#chap13">Next</a>
-    </div>
-  </div>
-</div>
-
-
-<div id="chap23">
-  <br><br><br><br><br>
-  <div class="speech12">
-        <br>
-    <div id="right">
-        <a href="#chap13">Next</a>
-    </div>
-  </div>
-</div>
-
-
-<div id="chap24">
-  <br><br><br><br><br>
-  <div class="speech12">
-        <br>
-    <div id="right">
-        <a href="#chap13">Next</a>
-    </div>
-  </div>
-</div>
-
-
-<div id="chap25">
-  <br><br><br><br><br>
-  <div class="speech12">
-        <br>
-    <div id="right">
-        <a href="#chap13">Next</a>
-    </div>
-  </div>
-</div>
-
-
-<div id="chap26">
-  <br><br><br><br><br>
-  <div class="speech12">
-        <br>
-    <div id="right">
-        <a href="#chap13">Next</a>
-    </div>
-  </div>
-</div>
-
-<div id="chap27">
-  <br><br><br><br><br>
-  <div class="speech12">
-        <br>
-    <div id="right">
-        <a href="#chap13">Next</a>
-    </div>
-  </div>
-</div>
-
-
-<div id="chap28">
-  <br><br><br><br><br>
-  <div class="speech12">
-        <br>
-    <div id="right">
-        <a href="#chap13">Next</a>
-    </div>
-  </div>
-</div>
-
-<div id="chap29">
-  <br><br><br><br><br>
-  <div class="speech12">
-        <br>
-    <div id="right">
-        <a href="#chap13">Next</a>
-    </div>
-  </div>
-</div>
-
-<div id="chap30">
-  <br><br><br><br><br>
-  <div class="speech12">
-        <br>
-    <div id="right">
-        <a href="#chap13">Next</a>
-    </div>
-  </div>
-</div>
-
-</div>
-    </div>
-<!--
-    <script language="JavaScript1.2">
-
-
-
-
-
-    var currentpos=0,alt=1,curpos1=0,curpos2=-1
-      function initialize(){
-      startit()
-      }
-      function scrollwindow(){
-      if (document.all)
-        temp=document.body.scrollTop
-      else
-        temp=window.pageYOffset
-      if (alt==0)
-        alt=1
-      else
-        alt=0
-      if (alt==0)
-        curpos1=temp
-      else
-        curpos2=temp
-      if (curpos1!=curpos2){
-        if (document.all)
-          currentpos=document.body.scrollTop+1
-      else
-        currentpos=window.pageYOffset+1
-        window.scroll(0,currentpos)
-    }
-      else{
-          currentpos=0
-          window.scroll(0,currentpos)
-    }
-    }
-      function startit(){
-          setInterval("scrollwindow()",10)
-    }
-        window.onload=initialize
-
-     </script> -->
+     </script>

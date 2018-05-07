@@ -1,25 +1,26 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A short, interactive, parallax graphic novel with choices, music, and autoscroll.
 
-Things you may want to cover:
+Features:
 
-* Ruby version
+* Ruby version: ruby 2.4.1p111
 
-* System dependencies
+I. Goal 
+---------
+To sucessfully create a interactive graphic novel with parallax scrolling.
 
-* Configuration
+II. Main File list
+---------------
+images/                              images folder
+stages/                              contains all three pages (index(main novel),new(noval cont.),show(classroom))
+users/                               contains log in/out pages
+scaffolding.css                      stylesheet containing styling for all the pages
+README.md                            This
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+II. Design
+----------
+A mostly black and white, sketchy theme, with hints of animations.
 
 * ...
 # scrolly

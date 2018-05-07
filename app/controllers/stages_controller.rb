@@ -2,25 +2,12 @@ class StagesController < ApplicationController
   before_action :authenticate_user!
 
   def show
-    game = Game.where(scrollc: params[:scrollz_id].to_i, user_id: current_user.id).first
-    if game
-      update_game(game)
-      @stage = Stage.find(game.stage.split(',').last)
-    else
-      Game.create(stages: params[:id], choices: "", scrollz_id: params[:scrollz_id], user_id: current_user.id)
-      @stage = Stage.find(params[:id])
-    end
-      @choices = Choice.where(stage_id: @stage.id)
-      @stages_id = []
-      @choices.each do |choice|
-        @stages << [choice, Stage.where(parent_choice_id: choice.id).first]
-      end
+
   end
 
+
   def new
-    @scrollz = Scrollz.find(params[:scrollz_id])
-    is_the_user_the_owner(@scrollz, current_user)
-    @stage = Stage.new
+
   end
 
   def create
@@ -39,8 +26,7 @@ class StagesController < ApplicationController
   end
 
   def edit
-    @scrollz= Scrollz.find(params[:scrollz_id])
-    @cstage = Stage.find(params[:id])
+
   end
 
   def update
