@@ -1,7 +1,6 @@
                                             <!-- MAIN PAGE -->
 
-  <%= audio_tag "The Pink Panther Theme Song.mp3", :id => "pink" %>
-
+<%= audio_tag "The Pink Panther Theme Song.mp3", :id => "pink"%>
 
   <div class="stage1">
 
@@ -72,7 +71,7 @@
                     <%= image_tag "speech/3", :style => "width: 35%;left: 0%;position: relative;top: -96px;"%>
             </div>
 
-                                <%= image_tag "speech/4", :style => "width: 97%;position: relative;top: -150px;background-color: #a94a4a82;height: 848px"%>
+                        <%= image_tag "speech/4", :style => "width: 97%;position: relative;top: -150px;background-color: #a94a4a82;height: 848px"%>
 
            <!-- <div id="chap9">
             <br><br><br><br><br>
@@ -166,9 +165,7 @@
 
     </div>
 
-
     <script>
-
-
-
-     </script>
+        var panthar = document.getElementById("pink");
+        panthar.play();
+    </script>
