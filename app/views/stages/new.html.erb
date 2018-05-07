@@ -1,5 +1,17 @@
                                       <!-- BREAKROOM -->
 
+    <!-- <audio id="audio_play">
+        <%= audio_tag "/", :id => "Allegra", :onload => "playSound()" %>
+    </audio>
+
+    <audio id="audio_play">
+        <%= audio_tag "/", :id => "Frida", :onload => "playSound()" %>
+    </audio>
+
+    <audio id="audio_play">
+        <%= audio_tag "/", :id => "Sharif", :onload => "playSound()" %>
+    </audio> -->
+
 
 <div id="chapBreak">
   <br><br><br><br><br>
@@ -53,9 +65,12 @@
 
       <!-- Clayton voice over -->
 
-      <audio id="C_Because" controls>
-          <%= audio_tag "C_Because.mp3", :id => "C_Because"%>
+      <audio id="audio_play">
+          <%= audio_tag "C_Because.mp3", :id => "C_Because", :onload => "playSound()" %>
       </audio>
+
+
+      <%= audio_tag "silence.mp3", :id => "rain", :onload => "playSound()" %>
 
             <!--  -->
   </div>
@@ -63,6 +78,9 @@
 
   <div id="chap28">
     <br><br><br><br><br>
+    <audio id="audio_play">
+        <%= audio_tag "Clay Board.mp3", :id => "C_Board", :onload => "playSound()" %>
+    </audio>
   </div>
 
 

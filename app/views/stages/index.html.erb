@@ -1,6 +1,11 @@
                                             <!-- MAIN PAGE -->
+        <audio id="audio_play">
+            <%= audio_tag "/", :id => "C_Because", :onload => "playSound()" %>
+        </audio>
 
-
+        <audio id="audio_play">
+            <%= audio_tag "/", :id => "C_Board", :onload => "playSound()" %>
+        </audio>
 
 
   <div class="stage1">
@@ -87,22 +92,22 @@
 
           <%= image_tag "speech/5", :style => "width: 35%;left: 16%;position: relative;top: -124px;"%>
 
+              <!-- Frida voice over -->
+
+              <audio id="audio_play">
+                  <%= audio_tag "Frida copy.mp3", :id => "Frida", :onload => "playSound()" %>
+              </audio>
+
+                    <!--  -->
 
               <!-- Allegra voice over -->
 
-              <audio id="audio_play" controls>
+              <audio id="audio_play">
                   <%= audio_tag "Allegra.mp3", :id => "Allegra", :onload => "playSound()" %>
               </audio>
 
                     <!--  -->
 
-            <!-- Frida voice over -->
-
-            <audio id="audio_play" controls>
-                <%= audio_tag "Frida copy.mp3", :id => "Frida", :onload => "playSound()" %>
-            </audio>
-
-                  <!--  -->
 
           <%= image_tag "speech/6", :style => "width: 55%;left: 83%;position: relative;top: -319px;"%>
           </div>
@@ -117,7 +122,7 @@
           <br><br><br><br><br>
           <%= image_tag "zzz.gif", :style =>"width: 131%;left: -13%;position: relative;top: -18%;width: 22%;left: 44%;"%>
 
-          <audio id="audio_play" controls>
+          <audio id="audio_play">
               <%= audio_tag "Sharif copy.mp3", :id => "Sharif", :onload => "playSound()" %>
           </audio>
 

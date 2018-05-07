@@ -30,8 +30,16 @@ function Sharif() {
 // Clayton voice over
 function C_Because() {
   var voice4 = document.getElementById("C_Because")
-  setInterval(function(){ voice4.play(); }, 12000);
+  setInterval(function(){ voice4.play(); }, 14000);
 };
+
+// // Clayton voice over2
+// function C_Board() {
+//   var voice5 = document.getElementById("C_Board")
+//   setInterval(function(){ voice5.play(); }, 200);
+// };
+
+
 
 
 
