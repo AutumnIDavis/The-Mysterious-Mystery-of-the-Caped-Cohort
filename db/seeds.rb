@@ -64,25 +64,25 @@ Stage.create(description: stage[7], scrollz_id: scrollz_id)
 
 
 
-Choice.create(option: choices[0], scrollz_id: 1)
+Choice.create(option: choices[0], stage_id: 1)
 
-Choice.create(option: choices[1], scrollz_id: 1)
+Choice.create(option: choices[1], stage_id: 1)
 
-Choice.create(option: choices[2], scrollz_id: 2)
+Choice.create(option: choices[2], stage_id: 2)
 
-Choice.create(option: choices[3], scrollz_id: 2)
+Choice.create(option: choices[3], stage_id: 2)
 
-Choice.create(option: choices[4], scrollz_id: 3)
+Choice.create(option: choices[4], stage_id: 3)
 
-Choice.create(option: choices[5], scrollz_id: 3)
+Choice.create(option: choices[5], stage_id: 3)
 
-Choice.create(option: choices[4], scrollz_id: 4)
+Choice.create(option: choices[4], stage_id: 4)
 
-Choice.create(option: choices[0], scrollz_id: 4)
+Choice.create(option: choices[0], stage_id: 4)
 
-Choice.create(option: choices[4], scrollz_id: 5)
+Choice.create(option: choices[4], stage_id: 5)
 
-Choice.create(option: choices[0], scrollz_id: 5)
+Choice.create(option: choices[0], stage_id: 5)
 
 
 Choice.create(option: "Start", scrollz_id: nil)
