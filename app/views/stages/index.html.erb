@@ -86,6 +86,24 @@
           <%= image_tag "ques.gif", :style =>"width: 131%;left: -13%;position: relative;top: -21%;width: 22%; left: 90%;"%>
 
           <%= image_tag "speech/5", :style => "width: 35%;left: 16%;position: relative;top: -124px;"%>
+
+
+              <!-- Allegra voice over -->
+
+              <audio id="audio_play" controls>
+                  <%= audio_tag "Allegra.mp3", :id => "Allegra", :onload => "playSound()" %>
+              </audio>
+
+                    <!--  -->
+
+            <!-- Frida voice over -->
+
+            <audio id="audio_play" controls>
+                <%= audio_tag "Frida copy.mp3", :id => "Frida", :onload => "playSound()" %>
+            </audio>
+
+                  <!--  -->
+
           <%= image_tag "speech/6", :style => "width: 55%;left: 83%;position: relative;top: -319px;"%>
           </div>
 
@@ -98,6 +116,11 @@
         <div id="chap12pFive">
           <br><br><br><br><br>
           <%= image_tag "zzz.gif", :style =>"width: 131%;left: -13%;position: relative;top: -18%;width: 22%;left: 44%;"%>
+
+          <audio id="audio_play" controls>
+              <%= audio_tag "Sharif copy.mp3", :id => "Sharif", :onload => "playSound()" %>
+          </audio>
+
           </div>
 
 
@@ -161,7 +184,7 @@
               <%= image_tag "speech/12", :style => "width: 35%;left: -56%;position: relative;top: 102px;"%>
         </div>
     </div>
-
+<!--
     <script>
     var currentpos=0,alt=1,curpos1=0,curpos2=-1
     function initialize(){
@@ -194,4 +217,4 @@
     }
       window.onload=initialize
 
-    </script>
+    </script> -->

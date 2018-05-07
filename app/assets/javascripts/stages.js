@@ -8,11 +8,38 @@ function rain() {
   var thunder = document.getElementById("rain")
   thunder.play()
 };
-//
-//
-// //door sound
-//   function door() {
-//     var creak = document.getElementById("door")
-//     setInterval(function(){ creak.play(); }, 18000);
-//     creak.pause()
-//   };
+
+// Allegra voice over
+function Allegra() {
+  var voice1 = document.getElementById("Allegra")
+  setInterval(function(){ voice1.play(); }, 5000);
+};
+
+// Frida voice over
+function Frida() {
+  var voice2 = document.getElementById("Frida")
+  setInterval(function(){ voice2.play(); }, 7000);
+};
+
+// Sharif voice over
+function Sharif() {
+  var voice3 = document.getElementById("Sharif")
+  setInterval(function(){ voice3.play(); }, 9000);
+};
+
+// Clayton voice over
+function C_Because() {
+  var voice4 = document.getElementById("C_Because")
+  setInterval(function(){ voice4.play(); }, 12000);
+};
+
+
+
+
+
+// door sound
+  // function door() {
+  //   var creak = document.getElementById("door")
+  //   setInterval(function(){ creak.play(); }, 18000);
+  //   creak.pause()
+  // };
