@@ -28,10 +28,10 @@ function Sharif() {
 };
 
 // Clayton voice over
-function C_Because() {
-  var voice4 = document.getElementById("C_Because")
-  setInterval(function(){ voice4.play(); }, 14000);
-};
+// function C_Because() {
+//   var voice4 = document.getElementById("C_Because")
+//   setInterval(function(){ voice4.play(); }, 14000);
+// };
 
 // // Clayton voice over2
 // function C_Board() {
