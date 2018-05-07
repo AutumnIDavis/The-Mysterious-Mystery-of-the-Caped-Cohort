@@ -12,7 +12,7 @@
     </div>
 
     <div class="scrollz">
-        <% @scrollz.each do |scrollz|%>
+        <% @scrollzs.each do |scrollz|%>
           <div class="scrollz">
             <%= link_to "#{scrollz.title}", scrollz_path(scrollz.id), class: "scrollz_title" %>
 
