@@ -2,7 +2,7 @@
 
 scrollz = "MURDER"
 
-description= "Whats really happening on that 8th floor"
+intstruction = "Whats really happening on that 8th floor"
 
  stages =[
    "You walk into the classrom to ask a question",
@@ -22,44 +22,44 @@ choices =[
     "mind your buisiness",
    "Hide in 806 with Bri!"]
 
-user = User.create(user_name: "admin", email: "admin@mail.com", password: "111111", password_confirmation: "111111")
+user = User.create(email: "admin@mail.com", password: "111111", password_confirmation: "111111")
 
 
-Scrollz.create(title: scrollz, description: description , user_id: user.id)
-
-scrollz = Scrollz.where(title: "There has been a MURDER").first
-
-Stage.create(description: stages[0], scrollz_id: scrollz_id)
-
-Stage.create(description: stages[1], scrollz_id: scrollz_id)
-
-Stage.create(description: stages[2], scrollz_id: scrollz_id)
-
-Stage.create(description: stages[3], scrollz_id: scrollz_id)
-
-Stage.create(description: stages[4], scrollz_id: scrollz_id)
-
-Stage.create(description: stages[5], scrollz_id: scrollz_id)
-
-Stage.create(description: stages[6], scrollz_id: scrollz_id)
-
-
-
-
-
-Scrollz.create(option: "Start",
-
+Scrollz.create(title: "murder", intstruction: "cyo" , user_id: user.id)
 
 scrollz = Scrollz.where(title: "murder").first
 
-Stage.create(description: stage[0], scrollz_id: scrollz_id)
-Stage.create(description: stage[1], scrollz_id: scrollz_id)
-Stage.create(description: stage[2], scrollz_id: scrollz_id)
-Stage.create(description: stage[3], scrollz_id: scrollz_id)
-Stage.create(description: stage[4], scrollz_id: scrollz_id)
-Stage.create(description: stage[5], scrollz_id: scrollz_id)
-Stage.create(description: stage[6], scrollz_id: scrollz_id)
-Stage.create(description: stage[7], scrollz_id: scrollz_id)
+Stage.create(description: stages[0], scrollz_id: scrollz.id)
+
+Stage.create(description: stages[1], scrollz_id: scrollz.id)
+
+Stage.create(description: stages[2], scrollz_id: scrollz.id)
+
+Stage.create(description: stages[3], scrollz_id: scrollz.id)
+
+Stage.create(description: stages[4], scrollz_id: scrollz.id)
+
+Stage.create(description: stages[5], scrollz_id: scrollz.id)
+
+Stage.create(description: stages[6], scrollz_id: scrollz.id)
+
+
+
+
+
+
+
+
+scrollz = Scrollz.first
+
+Stage.create(description: stages[0], scrollz_id: scrollz.id)
+Stage.create(description: stages[1], scrollz_id: scrollz.id)
+Stage.create(description: stages[2], scrollz_id: scrollz.id)
+Stage.create(description: stages[3], scrollz_id: scrollz.id)
+Stage.create(description: stages[4], scrollz_id: scrollz.id)
+Stage.create(description: stages[5], scrollz_id: scrollz.id)
+Stage.create(description: stages[6], scrollz_id: scrollz.id)
+Stage.create(description: stages[7], scrollz_id: scrollz.id)
 
 
 
@@ -83,6 +83,3 @@ Choice.create(option: choices[0], stage_id: 4)
 Choice.create(option: choices[4], stage_id: 5)
 
 Choice.create(option: choices[0], stage_id: 5)
-
-
-Choice.create(option: "Start", scrollz_id: nil)
