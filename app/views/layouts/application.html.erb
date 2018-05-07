@@ -10,9 +10,15 @@
 
   </head>
 
-  <body onload="initialize()">
-
+  <body>
+  <%= audio_tag "The Pink Panther Theme Song.mp3", :id => "pink" %>
 
     <%= yield %>
   </body>
 </html>
+
+<script>
+  window.onload = function() {
+    document.getElementById("pink").play();
+  }
+</script>

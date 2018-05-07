@@ -1,6 +1,7 @@
                                             <!-- MAIN PAGE -->
 
-<%= audio_tag "The Pink Panther Theme Song.mp3", :id => "pink"%>
+
+
 
   <div class="stage1">
 
@@ -48,46 +49,45 @@
           </div>
 
 
-
-          <div id="chap6">
-            <br><br><br><br><br>
-                  <br>
-                    <div class="who">
-                      <%= image_tag "speech/1", :style => "width: 35%;left: 21%;position: relative;top: -68px;"%>
-                    </div>
-              </div>
-
+      <div id="chap6">
+        <br><br><br><br><br>
+              <br>
+                <div class="who">
+                  <%= image_tag "speech/1", :style => "width: 35%;left: 21%;position: relative;top: -68px;"%>
+                </div>
+          </div>
 
 
-          <div id="chap7">
-            <br><br><br><br><br>
-                        <br>
-                      <%= image_tag "speech/2", :style => "width: 35%;left: 21%;position: relative;top: -68px;"%>
-              </div>
+
+      <div id="chap7">
+        <br><br><br><br><br>
+                    <br>
+                  <%= image_tag "speech/2", :style => "width: 35%;left: 21%;position: relative;top: -68px;"%>
+          </div>
 
 
-          <div id="chap8">
-            <br><br><br><br><br>
-                    <%= image_tag "speech/3", :style => "width: 35%;left: 0%;position: relative;top: -96px;"%>
-            </div>
+      <div id="chap8">
+        <br><br><br><br><br>
+                <%= image_tag "speech/3", :style => "width: 35%;left: 0%;position: relative;top: -96px;"%>
+        </div>
 
-                        <%= image_tag "speech/4", :style => "width: 97%;position: relative;top: -150px;background-color: #a94a4a82;height: 848px"%>
+                <%= image_tag "speech/4", :style => "width: 97%;position: relative;top: -150px;background-color: #a94a4a82;height: 848px"%>
 
            <!-- <div id="chap9">
             <br><br><br><br><br>
             </div> -->
 
-          <div id="chap10">
-            <br><br><br><br><br>
-            </div>
+        <div id="chap10">
+          <br><br><br><br><br>
+          </div>
 
-          <div id="chap11">
-            <br><br><br><br><br>
-            <%= image_tag "ques.gif", :style =>"width: 131%;left: -13%;position: relative;top: -21%;width: 22%; left: 90%;"%>
+        <div id="chap11">
+          <br><br><br><br><br>
+          <%= image_tag "ques.gif", :style =>"width: 131%;left: -13%;position: relative;top: -21%;width: 22%; left: 90%;"%>
 
-            <%= image_tag "speech/5", :style => "width: 35%;left: 16%;position: relative;top: -124px;"%>
-            <%= image_tag "speech/6", :style => "width: 55%;left: 83%;position: relative;top: -319px;"%>
-            </div>
+          <%= image_tag "speech/5", :style => "width: 35%;left: 16%;position: relative;top: -124px;"%>
+          <%= image_tag "speech/6", :style => "width: 55%;left: 83%;position: relative;top: -319px;"%>
+          </div>
 
 
           <div id="chap12">
@@ -95,17 +95,17 @@
             <%= image_tag "speech/7", :style => "width: 55%;left: -28%;position: relative;top: 215px;"%>
             </div>
 
-            <div id="chap12pFive">
-              <br><br><br><br><br>
-              <%= image_tag "zzz.gif", :style =>"width: 131%;left: -13%;position: relative;top: -18%;width: 22%;left: 44%;"%>
-              </div>
+        <div id="chap12pFive">
+          <br><br><br><br><br>
+          <%= image_tag "zzz.gif", :style =>"width: 131%;left: -13%;position: relative;top: -18%;width: 22%;left: 44%;"%>
+          </div>
 
 
 
-    <div id="chap13">
-      <br><br><br><br><br>
-            <%= image_tag "speech/8", :style => "width: 77%;left: 60%;position: relative;top: 24px;"%>
-      </div>
+        <div id="chap13">
+          <br><br><br><br><br>
+                <%= image_tag "speech/8", :style => "width: 77%;left: 60%;position: relative;top: 24px;"%>
+          </div>
 
 
 
@@ -159,13 +159,39 @@
               </div>
 
               <%= image_tag "speech/12", :style => "width: 35%;left: -56%;position: relative;top: 102px;"%>
-
         </div>
-
-
     </div>
 
     <script>
-        var panthar = document.getElementById("pink");
-        panthar.play();
+    var currentpos=0,alt=1,curpos1=0,curpos2=-1
+    function initialize(){
+    startit()
+    }
+    function scrollwindow(){
+    if (document.all)
+      temp=document.body.scrollTop
+    else
+      temp=window.pageYOffset
+    if (alt==0)
+      alt=1
+    else
+      alt=0
+    if (alt==0)
+      curpos1=temp
+    else
+      curpos2=temp
+    if (curpos1!=curpos2){
+      if (document.all)
+        currentpos=document.body.scrollTop+1
+    else
+      currentpos=window.pageYOffset+1
+      window.scroll(0,currentpos)
+    }
+
+    }
+    function startit(){
+       time = setInterval("scrollwindow()",3)
+    }
+      window.onload=initialize
+
     </script>
