@@ -1,5 +1,43 @@
-<h1>New Scrollz</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Create </title>
+  </head>
+  <body>
+    <div class="registration_forms">
 
-<%= render 'form', scrollz: @scrollz %>
+      <div class="form_title_create">
+        <h2 class="sign_up_h2">Create your own!</h2>
+      </div>
 
-<%= link_to 'Back', scrollzs_path %>
+      <%= form_for @scrollz do |form| %>
+      <div class="field">
+        <%= form.label :title, class: "form_heading" %> <br>
+      </div>
+
+      <div class="field">
+        <%= form.text_field :title, class: "form_input_box", required: "true" %> <br>
+      </div>
+
+      <div class="field">
+        <%= form.label :description, class: "form_heading" %> <br>
+      </div>
+
+      <div class="field">
+        <%= form.text_field :description, class: "form_input_box", required: "true" %> <br>
+      </div>
+
+      <div class="field">
+        <%= form.label :image, class: "form_heading" %> <br>
+        <%= form.file_field :image, required: "true" %> <br>
+      </div>
+
+      <div class="field">
+        <%= form.button :submit, value: "Create ", id: "small_log_in_btn_create" %>
+      </div>
+
+      <% end %>
+    </div>
+  </body>
+</html>

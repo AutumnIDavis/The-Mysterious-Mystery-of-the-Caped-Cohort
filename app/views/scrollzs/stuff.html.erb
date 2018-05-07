@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <%= form_for [@scrollz, @stage, @choice] do |f| %>
+      <%= f.fields_for :choice, [Choice.new] do |choice| %>
+        <%= choice.text_field :option %>
+      <% end %>
+    <%= f.submit %>
+    <% end %>
+  </body>
+</html>

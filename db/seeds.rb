@@ -1,4 +1,12 @@
-
+ActiveRecord::Base.transaction do
+  ['common', Rails.env].each do |seedfile|
+    seed_file = "#{Rails.root}/db/seeds/#{seedfile}.rb"
+    if File.exists?(seed_file)
+      puts "- - Seeding data from file: #{seedfile}"
+      require seed_file
+    end
+  end
+end
 
  stages =[
    "ask questions",
@@ -134,39 +142,38 @@ Stages.create(description: stages[10], scrollz_id: scrollz_id, [14])
 
 
 
-Choice.create(option: choices[0], chapter_id: 1)
+Choice.create(option: choices[0], scrollz_id: 1)
 
-Choice.create(option: choices[1], chapter_id: 1)
+Choice.create(option: choices[1], scrollz_id: 1)
 
-Choice.create(option: choices[2], chapter_id: 2)
+Choice.create(option: choices[2], scrollz_id: 2)
 
-Choice.create(option: choices[3], chapter_id: 2)
+Choice.create(option: choices[3], scrollz_id: 2)
 
-Choice.create(option: choices[4], chapter_id: 3)
+Choice.create(option: choices[4], scrollz_id: 3)
 
-Choice.create(option: choices[5], chapter_id: 3)
+Choice.create(option: choices[5], scrollz_id: 3)
 
-Choice.create(option: choices[6], chapter_id: 5)
+Choice.create(option: choices[6], scrollz_id: 5)
 
-Choice.create(option: choices[6], chapter_id: 6)
+Choice.create(option: choices[6], scrollz_id: 6)
 
-Choice.create(option: choices[7], chapter_id: 5)
+Choice.create(option: choices[7], scrollz_id: 5)
 
-Choice.create(option: choices[7], chapter_id: 6)
+Choice.create(option: choices[7], scrollz_id: 6)
 
-Choice.create(option: choices[8], chapter_id: 8)
+Choice.create(option: choices[8], scrollz_id: 8)
 
-Choice.create(option: choices[9], chapter_id: 8)
+Choice.create(option: choices[9], scrollz_id: 8)
 
-Choice.create(option: choices[8], chapter_id: 10)
+Choice.create(option: choices[8], scrollz_id: 10)
 
-Choice.create(option: choices[9], chapter_id: 10)
-
-
+Choice.create(option: choices[9], scrollz_id: 10)
 
 
-Choice.create(option: "Start", chapter_id: nil)
 
+
+Choice.create(option: "Start", scrollz_id: nil)
 
 
 
