@@ -1,25 +1,25 @@
-<p id="notice"><%= notice %></p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Adventure</title>
 
-<h1>Scrollzs</h1>
+  </head>
+  <body>
 
-<table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+    <div class="main">
 
-  <tbody>
-    <% @scrollzs.each do |scrollz| %>
-      <tr>
-        <td><%= link_to 'Show', scrollz %></td>
-        <td><%= link_to 'Edit', edit_scrollz_path(scrollz) %></td>
-        <td><%= link_to 'Destroy', scrollz, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+    </div>
 
-<br>
+    <div class="scrollz">
+        <% @scrollzs.each do |scrollz|%>
+          <div class="scrollz">
+            <%= link_to "#{scrollz.title}", scrollz_path(scrollz.id), class: "scrollz_title" %>
 
-<%= link_to 'New Scrollz', new_scrollz_path %>
+            </div>
+          </div>
+        <% end %>
+    </div>
+
+  </body>
+</html>

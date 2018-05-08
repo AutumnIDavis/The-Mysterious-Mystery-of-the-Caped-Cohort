@@ -1,5 +1,17 @@
                                       <!-- BREAKROOM -->
 
+    <!-- <audio id="audio_play">
+        <%= audio_tag "/", :id => "Allegra", :onload => "playSound()" %>
+    </audio>
+
+    <audio id="audio_play">
+        <%= audio_tag "/", :id => "Frida", :onload => "playSound()" %>
+    </audio>
+
+    <audio id="audio_play">
+        <%= audio_tag "/", :id => "Sharif", :onload => "playSound()" %>
+    </audio> -->
+
 
 <div id="chapBreak">
   <br><br><br><br><br>
@@ -25,11 +37,13 @@
 
   <div id="chap22">
     <br><br><br><br><br>
+    <%= image_tag "speech/14", :style => "width: 45%;left: 73%;position: relative;top: 147px;"%>
   </div>
 
 
   <div id="chap23">
     <br><br><br><br><br>
+      <%= image_tag "speech/15", :style => "width: 45%;left: 31%;position: relative;top: -10px;"%>
   </div>
 
 
@@ -45,22 +59,38 @@
 
   <div id="chap26">
     <br><br><br><br><br>
+    <%= image_tag "speech/16", :style => "width: 45%;left: -8%;position: relative;top: -286px;"%>
   </div>
 
 
   <div id="chap27">
     <br><br><br><br><br>
+    <%= image_tag "speech/17", :style => "width: 70%;left: -8%;position: relative;top: -3px;"%>
+
+      <!-- Clayton voice over -->
+
+      <audio id="audio_play">
+          <%= audio_tag "C_Because.mp3", :id => "C_Because", :onload => "playSound()" %>
+      </audio>
+
+
+      <%= audio_tag "silence.mp3", :id => "rain", :onload => "playSound()" %>
+
+            <!--  -->
   </div>
 
 
   <div id="chap28">
     <br><br><br><br><br>
+    <audio id="audio_play">
+        <%= audio_tag "Clay Board.mp3", :id => "C_Board", :onload => "playSound()" %>
+    </audio>
   </div>
 
-
+<!-- 
   <div id="chap29">
     <br><br><br><br><br>
-  </div>
+  </div> -->
 
 
   <div id="chap30">
@@ -69,40 +99,53 @@
 
   <div id="chap31" style= "height:950px;">
     <br><br><br><br><br>
+    <p  style= " BACKGROUND-COLOR:  black; padding: 70px; text-align:  center; color:  white; position:  relative; top: 30%;" >To BE CONTINUED...</p>
   </div>
 
 </div>
 
 <script>
-var currentpos=0,alt=1,curpos1=0,curpos2=-1
-function initialize(){
-startit()
-}
-function scrollwindow(){
-if (document.all)
-  temp=document.body.scrollTop
-else
-  temp=window.pageYOffset
-if (alt==0)
-  alt=1
-else
-  alt=0
-if (alt==0)
-  curpos1=temp
-else
-  curpos2=temp
-if (curpos1!=curpos2){
-  if (document.all)
-    currentpos=document.body.scrollTop+1
-else
-  currentpos=window.pageYOffset+1
-  window.scroll(0,currentpos)
-}
 
-}
-function startit(){
-    setInterval("scrollwindow()",3)
-}
-  window.onload=initialize
+
+  function backgroundN() {
+    document.getElementById("pink").play();
+    initialize();
+    C_Because();
+    C_Board();
+  }
+
+  backgroundN();
+
+
+// var currentpos=0,alt=1,curpos1=0,curpos2=-1
+// function initialize(){
+// startit()
+// }
+// function scrollwindow(){
+// if (document.all)
+//   temp=document.body.scrollTop
+// else
+//   temp=window.pageYOffset
+// if (alt==0)
+//   alt=1
+// else
+//   alt=0
+// if (alt==0)
+//   curpos1=temp
+// else
+//   curpos2=temp
+// if (curpos1!=curpos2){
+//   if (document.all)
+//     currentpos=document.body.scrollTop+1
+// else
+//   currentpos=window.pageYOffset+1
+//   window.scroll(0,currentpos)
+// }
+//
+// }
+// function startit(){
+//     setInterval("scrollwindow()",3)
+// }
+//   window.onload=initialize
 
 </script>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_05_03_213844) do
+ActiveRecord::Schema.define(version: 2018_05_07_230531) do
 
   create_table "choices", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -27,6 +27,13 @@ ActiveRecord::Schema.define(version: 2018_05_03_213844) do
     t.integer "user_id"
     t.string "scrollz"
     t.string "body"
+  end
+
+  create_table "hallways", force: :cascade do |t|
+    t.string "index"
+    t.string "show"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "players", force: :cascade do |t|

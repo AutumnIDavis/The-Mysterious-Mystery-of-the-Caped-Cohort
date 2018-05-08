@@ -1,0 +1,2 @@
+class Hallway < ApplicationRecord
+end

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <title>Scrolly</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,15 +12,17 @@
   </head>
 
   <body>
-  <%= audio_tag "The Pink Panther Theme Song.mp3", :id => "pink" %>
+  <%= audio_tag "The Pink Panther Theme Song.mp3", :id => "pink"%>
+
+        <ul class="things">
+          <% if user_signed_in? %>
+            <li>
+              <%= link_to "Log out", destroy_user_session_path, id: "log_out", class: "button", method: :delete %>
+            </li>
+
+        </ul>
+<% end %>
 
     <%= yield %>
   </body>
 </html>
-
-<script>
-  window.onload = function backgroundM() {
-    document.getElementById("pink").play();
-    initialize();
-  }
-</script>

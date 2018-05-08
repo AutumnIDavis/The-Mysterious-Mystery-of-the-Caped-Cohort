@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <div id="cyo">
+      <h1>Design your OWN</h1>
+    </div>
+
+    <div id="murder">
+      <%= @scrollz.title %><br>
+    </div>
+
+    <div class="moving-container">
+
+
+      <div class="hoops">
+        <%= @scrollz.create_hoop(@scrollz.stages.first).html_safe %>
+      </div>
+
+      <div class="crud_container">
+
+        <% @stages.each do |stage| %>
+        <div class="design_stage">
+          <%= stage.description %><br>
+        </div>
+
+        <div class="update_delete_container">
+          <%= link_to "Update Stage",  edit_scrollz_chapter_path(@scrollz, chapter.id), id: "design_link_update"%>
+
+        </div>
+
+        <% end %>
+      </div>
+
+    </div>
+  </body>
+</html>

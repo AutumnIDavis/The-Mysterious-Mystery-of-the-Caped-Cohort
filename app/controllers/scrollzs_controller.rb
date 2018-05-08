@@ -1,22 +1,21 @@
 class ScrollzsController < ApplicationController
-  before_action :set_scrollz, only: [:show, :edit, :update, :destroy]
+  before_action  only: [:show, :edit, :update, :destroy]
  before_action :authenticate_user!, :except => [:index, :show]
 
   # GET /scrollzs
   # GET /scrollzs.json
   def index
-    @scrollzs = Scrollz.all
+    @scrollz = Scrollz.all
   end
 
 
   def show
-@scrollz = Scrollz.find(params[:id])
-@first_stage = Stage.where(scrollz_id: @scrollz.id).first
+
   end
 
 
   def new
-    @scrollz = Scrollz.new
+
   end
 
 
