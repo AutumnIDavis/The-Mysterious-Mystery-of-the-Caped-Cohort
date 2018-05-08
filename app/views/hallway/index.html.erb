@@ -1,0 +1,47 @@
+
+
+
+<div class="stage4">
+
+  <div class="class1" style= "display: inline-block;margin: 1% 3%;z-index: 2;">
+    <a href="/stages/#chap19">To <br><br> Classroom</a>
+  </div>
+  <div class="class1" style= "display: inline-block;margin: 1% 3%;z-index: 2;">
+    <a href="/stages/new">To <br><br> Breakroom</a>
+  </div>
+
+  <div id="Bee"> </div>
+
+</div>
+
+<div class="q3">
+  <a onclick="toggle_visibility('a3');">"See anything, Bee?"</a>
+  <div id="a3">
+    <p style= "background-color: #ffffffb3;padding:  30px;width:  14%;">"Nothing, <br><br> out here."</p>
+  </div>
+</div>
+
+<br><br><br><br><br><br>
+
+
+<div class="q4">
+  <a onclick="toggle_visibility('a4');">"Anywhere left to check?"</a>
+  <div id="a4">
+    <p style= "background-color: #ffffffb3;padding:  30px;width:  38%;"> Just the classroom <br><br> and the breakroom."</p>
+  </div>
+</div>
+
+<script>
+function toggle_visibility(a1) {
+  var e = document.getElementById(a1);
+  e.style.display = ((e.style.display!='none') ? 'none' : 'block');
+}
+
+function toggle_visibility(a2) {
+  var o = document.getElementById(a2);
+  o.style.display = ((o.style.display!='none') ? 'none' : 'block');
+}
+
+clearInterval(time)
+
+</script>

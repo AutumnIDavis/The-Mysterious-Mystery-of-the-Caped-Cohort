@@ -153,6 +153,21 @@ label {
     background-size: cover;
 }
 
+.stage4 {
+    /* The image used */
+    background-image: url("drexH");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the chapllax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1007px;
+}
+
 .speech1{
   background-color: #ffffffb8;
   padding: 30px;
@@ -614,11 +629,23 @@ label {
   background-image: url("joe");
   font-size: 36px;
   position: relative;
-  top: -153px;
+  top: -221px;
   width: 100%;
   height: 1071px;
   left: 34%;
   background-repeat: no-repeat;
+}
+
+#Bee{
+  background-image: url("Bee");
+  font-size: 36px;
+  position: relative;
+  top: -60px;
+  width: 100%;
+  height: 1071px;
+  left: 44%;
+  background-repeat: no-repeat;
+  z-index: 0;
 }
 
 .q1{
@@ -661,6 +688,29 @@ label {
   display: none;
   }
 
+  #a3 {
+    /* margin: 0% 2%; */
+    font-size: 31px;
+    position: relative;
+    top: -752px;
+    color: blue;
+    left: 4%;
+    transition: all ease 0.8s;
+    display: none;
+  }
+
+
+  #a4 {
+    margin: 0% 2%;
+    font-size: 31px;
+    position: relative;
+    top: -739px;
+    color: blue;
+    left: 1%;
+    transition: all ease 0.8s;
+    display: none;
+    }
+
 .q1 a{
   color: black;
   position: relative;
@@ -697,11 +747,49 @@ label {
   color: rgb(136, 8, 59);
 }
 
+.q3 a{
+  color: black;
+  position: relative;
+  top: -788px;
+  text-align: center;
+  font-size: 35px;
+  background-color: #ad7c5eb0;
+  padding: 20px;
+}
+
+.q3 a:hover{
+  position: relative;
+  top: -788px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(136, 8, 59);
+}
+
+.q4 a{
+  color: black;
+  position: relative;
+  top: -788px;
+  text-align: center;
+  font-size: 35px;
+  background-color: #ad7c5eb0;
+  padding: 20px;
+}
+
+.q4 a:hover{
+  position: relative;
+  top: -788px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(136, 8, 59);
+}
+
 .break{
   display: inline-block;
   color: red;
   margin: 2%;
   text-align: center;
+  top: 258px;
+  position: relative;
 }
 
 .class{
@@ -709,6 +797,17 @@ label {
   color: red;
   margin: 2%;
   text-align: center;
+  top: 258px;
+  position: relative;
+}
+
+.hall{
+  display: inline-block;
+  color: red;
+  margin: 2%;
+  text-align: center;
+  top: 258px;
+  position: relative;
 }
 
 .class1 a{
@@ -720,6 +819,7 @@ label {
   left: 4%;
   font-size: 41px;
   top: 64px;
+  display: inline-block;
 }
 
 .class1 a:hover{
@@ -759,6 +859,23 @@ label {
 }
 
 .break a:hover{
+  display: inline-block;
+  color: rgb(98, 136, 191);
+  margin: 2%;
+  text-align: center;
+}
+
+.hall a{
+  display: inline-block;
+  color: red;
+  margin: 2%;
+  text-align: center;
+  position: relative;
+  top: -300px;
+
+}
+
+.hall a:hover{
   display: inline-block;
   color: rgb(98, 136, 191);
   margin: 2%;

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'hallway/index'
+  get 'hallway/show'
   resources :scrollzs
   resources :games
   resources :choices
