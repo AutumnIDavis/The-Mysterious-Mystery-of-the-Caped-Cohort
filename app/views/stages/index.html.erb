@@ -12,7 +12,7 @@
 
     <div id="chap1" >
         <%= audio_tag "rain.mp3", :id => "rain", :onload => "playSound()" %>
-    <%= image_tag "cloud.png", :style => "width: 50%;left: -16%;position: relative;top: 102px;"%>
+        <%= image_tag "cloud.png", :style => "width: 50%;left: -16%;position: relative;top: 102px;"%>
       <br><br><br><br><br>
     </div>
 
@@ -189,8 +189,11 @@
               <%= image_tag "speech/12", :style => "width: 35%;left: -56%;position: relative;top: 102px;"%>
         </div>
     </div>
-<!--
+
     <script>
+
+
+
     var currentpos=0,alt=1,curpos1=0,curpos2=-1
     function initialize(){
     startit()
@@ -218,8 +221,31 @@
 
     }
     function startit(){
-       time = setInterval("scrollwindow()",3)
+       time = setInterval("scrollwindow()",1)
     }
-      window.onload=initialize
+function simulateClick() {
+  var evt = document.createEvent("MouseEvents");
+  evt.initMouseEvent("click", true, true, window,
+    0, 0, 0, 0, 0, false, false, false, false, 0, null);
+  var a = document.getElementById("pink").play();
+  a.dispatchEvent(evt);
+}
 
-    </script> -->
+
+      function backgroundM() {
+        document.getElementById("pink").play();
+  var evt = document.createEvent("MouseEvents");
+  evt.initMouseEvent("click", true, true, window,
+    0, 0, 0, 0, 0, false, false, false, false, 0, null);
+  var a = document.getElementById("pink").play();
+
+
+        initialize();
+        rain();
+        Allegra();
+        Sharif();
+        Frida();
+      }
+      document.addEventListener("DOMContentLoaded",backgroundM)
+
+    </script>

@@ -6,7 +6,7 @@ Features:
 
 * Ruby version: ruby 2.4.1p111
 
-I. Goal 
+I. Goal
 ---------
 To sucessfully create a interactive graphic novel with parallax scrolling.
 
@@ -23,4 +23,16 @@ II. Design
 A mostly black and white, sketchy theme, with hints of animations.
 
 * ...
-# scrolly
+
+
+
+Team
+Autumn Davis
+Sarah Wylie
+ Honorary member : Sophia Di
+
+
+Rails App
+
+Parallax scrolling -With this, the website layout sees the background of the web page moving at a slower rate to the foreground, creating a 3D effect as you scroll
+Authentication with devise
