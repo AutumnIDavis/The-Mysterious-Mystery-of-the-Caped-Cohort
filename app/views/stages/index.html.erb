@@ -68,6 +68,14 @@
         <br><br><br><br><br>
                     <br>
                   <%= image_tag "speech/2", :style => "width: 35%;left: 21%;position: relative;top: -68px;"%>
+
+                  <!-- Steven voice over -->
+
+                  <audio id="audio_play">
+                      <%= audio_tag "Dev 1.mp3", :id => "Dev1", :onload => "playSound()" %>
+                  </audio>
+
+                        <!--  -->
           </div>
 
 
@@ -116,15 +124,27 @@
           <div id="chap12">
             <br><br><br><br><br>
             <%= image_tag "speech/7", :style => "width: 55%;left: -28%;position: relative;top: 215px;"%>
+
+            <!-- David voice over -->
+
+            <audio id="audio_play">
+                <%= audio_tag "david.mp3", :id => "David", :onload => "playSound()" %>
+            </audio>
+
+            <!--  -->
             </div>
 
         <div id="chap12pFive">
           <br><br><br><br><br>
           <%= image_tag "zzz.gif", :style =>"width: 131%;left: -13%;position: relative;top: -18%;width: 22%;left: 44%;"%>
 
+          <!-- Sharif voice over -->
+
           <audio id="audio_play">
               <%= audio_tag "Sharif copy.mp3", :id => "Sharif", :onload => "playSound()" %>
           </audio>
+
+          <!--  -->
 
           </div>
 
@@ -133,6 +153,15 @@
         <div id="chap13">
           <br><br><br><br><br>
                 <%= image_tag "speech/8", :style => "width: 77%;left: 60%;position: relative;top: 24px;"%>
+
+                <!-- Jay voice over -->
+
+                <audio id="audio_play">
+                    <%= audio_tag "Jay.mp3", :id => "Jay", :onload => "playSound()" %>
+                </audio>
+
+                <!--  -->
+
           </div>
 
 
@@ -141,6 +170,15 @@
           <br><br><br><br><br>
             <%= image_tag "speech/9", :style => "width: 42%;left: 16%;position: relative;top: -72px;"%>
             <%= image_tag "speech/10", :style => "width: 42%;left: 19%;position: relative;top: -20px;"%>
+
+            <!-- Steven voice over 2-->
+
+            <audio id="audio_play">
+                <%= audio_tag "Dev2.mp3", :id => "Dev2", :onload => "playSound()" %>
+            </audio>
+
+            <!--  -->
+
         </div>
 
 
@@ -190,7 +228,7 @@
                 <a href="/hallway/index">Check out the <br><br> Hallway</a>
               </div>
 
-              <%= image_tag "speech/12", :style => "width: 35%;left: -56%;position: relative;top: 102px;"%>
+              <%= image_tag "speech/12", :style => "width: 35%;left: -7%;position: relative;top: 102px;"%>
         </div>
     </div>
 
@@ -233,9 +271,14 @@
         document.getElementById("pink").play();
         initialize();
         rain();
+        door();
         Allegra();
         Sharif();
         Frida();
+        Dev1();
+        David();
+        Jay();
+        Dev2();
       }
       document.addEventListener("DOMContentLoaded",backgroundM)
 

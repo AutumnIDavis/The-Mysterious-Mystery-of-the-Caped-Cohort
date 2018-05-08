@@ -17,19 +17,19 @@ function rain() {
 // Allegra voice over
 function Allegra() {
   var voice1 = document.getElementById("Allegra")
-  setTimeout(function(){ voice1.play(); }, 34000);
+  setTimeout(function(){ voice1.play(); }, 60000);
 };
 
 // Frida voice over
 function Frida() {
   var voice2 = document.getElementById("Frida")
-  setTimeout(function(){ voice2.play(); }, 36000);
+  setTimeout(function(){ voice2.play(); }, 60000);
 };
 
 // Sharif voice over
 function Sharif() {
   var voice3 = document.getElementById("Sharif")
-  setTimeout(function(){ voice3.play(); }, 42000);
+  setTimeout(function(){ voice3.play(); }, 75000);
 };
 
 // Clayton voice over
@@ -44,15 +44,33 @@ function C_Board() {
   setTimeout(function(){ voice5.play(); }, 3500);
 };
 
+// Steven voice over
+function Dev1() {
+  var ste1 = document.getElementById("Dev1")
+  setTimeout(function(){ ste1.play(); }, 39000);
+};
 
+// David voice over
+function David() {
+  var dav = document.getElementById("David")
+  setTimeout(function(){ dav.play(); }, 69000);
+};
 
+// Jay voice over
+function Jay() {
+  var j = document.getElementById("Jay")
+  setTimeout(function(){ j.play(); }, 80000);
+};
 
-
+// Steven voice over2
+function Dev2() {
+  var ste2 = document.getElementById("Dev2")
+  setTimeout(function(){ ste2.play(); }, 83000);
+};
 
 
 // door sound
-  // function door() {
-  //   var creak = document.getElementById("door")
-  //   setInterval(function(){ creak.play(); }, 18000);
-  //   creak.pause()
-  // };
+  function door() {
+    var creak = document.getElementById("door")
+    setTimeout(function(){ creak.play(); }, 86500);
+  };
